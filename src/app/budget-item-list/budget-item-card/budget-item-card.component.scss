@@ -1,0 +1,62 @@
+@import'../../../main-style.scss';
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    .x-icon-button{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background:$dark;
+        right: 0;
+        border-radius: 50%; // this has to be half of the width
+        top: -17px;// this has to be the half of height
+    }
+}
+
+.budget-item{
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    .description {
+        display: flex;
+            flex-grow: 1;
+            font-size: 20px;
+             margin-left: 5px;
+    
+    
+    //vertically center the children element
+    align-items: center;
+    
+            }
+
+
+    .amount{
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+.expense{
+    p{
+        color: red;
+    }
+    .amount{
+        background-color: lightgray;
+    }
+}
+
+
+.income{
+    p{
+        color:green;
+    }
+    .amount{
+        background-color: lightgreen;
+    }
+}
